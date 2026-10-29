@@ -39,7 +39,7 @@ Real-time development metrics, continuous contribution heatmap, and activity bre
 ### 🏢 Peak Frame Organization & Fleet Infrastructure
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization.svg" width="100%" alt="Peak Frame Private Limited — Enterprise Fleet & Infrastructure" />
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization.svg?v=2" width="100%" alt="Peak Frame Private Limited — Enterprise Fleet & Infrastructure" />
 </p>
 
 
