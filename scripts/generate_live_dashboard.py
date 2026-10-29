@@ -55,11 +55,11 @@ def collect_live():
     try:
         token = get_token()
         now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-        # 1. Fetch user contributions calendar via GraphQL (defaulting to latest calendar year)
+        # 1. Fetch user contributions calendar for full calendar year 2026 via GraphQL
         gql_query = """
         query {
           user(login: "Vijaysir0hi") {
-            contributionsCollection {
+            contributionsCollection(from: "2026-01-01T00:00:00Z", to: "2026-12-31T23:59:59Z") {
               totalCommitContributions
               totalIssueContributions
               totalPullRequestContributions
@@ -81,12 +81,8 @@ def collect_live():
         coll = res["data"]["user"]["contributionsCollection"]
         cal = coll["contributionCalendar"]
         
-        all_days = [d["date"] for w in cal.get("weeks", []) for d in w.get("contributionDays", [])]
-        if all_days:
-            end = dt.date.fromisoformat(all_days[-1])
-        else:
-            end = (now + dt.timedelta(hours=5.5)).date()
-        start = end - dt.timedelta(days=364)
+        start = dt.date(2026, 1, 1)
+        end = dt.date(2026, 12, 31)
 
         daily = { (start + dt.timedelta(days=i)).isoformat(): 0 for i in range(365) }
         for w in cal.get("weeks", []):

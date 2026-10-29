@@ -100,10 +100,13 @@ class Canvas:
 def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
     """Returns exact date range, daily map, and top-line metrics per year and scope."""
     if active_year == '2026':
+        start_date = dt.date(2026, 1, 1)
+        end_date = dt.date(2026, 12, 31)
         daily = dict(live_daily)
-        sorted_dates = sorted(daily.keys())
-        end_date = dt.date.fromisoformat(sorted_dates[-1]) if sorted_dates else dt.date(2026, 10, 30)
-        start_date = end_date - dt.timedelta(days=364)
+        for i in range(365):
+            d_str = (start_date + dt.timedelta(days=i)).isoformat()
+            if d_str not in daily:
+                daily[d_str] = 0
         if not is_founder:
             repos_count = 7
             repos_label = "TRACKED PROJECTS"
@@ -111,8 +114,6 @@ def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
             active_days = 6
             streak_days = 2
             longest_streak = 2
-            if sum(daily.values()) > 29:
-                daily['2026-10-27'] = max(0, daily.get('2026-10-27', 0) - 2)
         else:
             # Founder 2026 dynamic calculation from live GitHub telemetry
             repos_count = max(repos_count, 8)
@@ -120,7 +121,8 @@ def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
             daily_vals = [v for v in daily.values() if v > 0]
             total_act = sum(daily.values())
             active_days = len(daily_vals)
-            cur_streak, max_streak = streaks(daily, end_date.isoformat())
+            now_date = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=5.5)).date()
+            cur_streak, max_streak = streaks(daily, now_date.isoformat())
             streak_days = cur_streak
             longest_streak = max_streak
         return {
@@ -229,7 +231,7 @@ def render(snapshot, role='org', active_year='2026'):
     
     stats = [
         (spec['repos_count'], spec['repos_label']),
-        (spec['total_act'], f'ACTIVITY / {active_year}' if active_year != '2026' else 'ACTIVITY / 365 DAYS'),
+        (spec['total_act'], f'CONTRIBUTIONS IN {active_year}'),
         (spec['active_days'], 'ACTIVE DAYS'),
         (spec['streak_days'], 'CURRENT STREAK / DAYS')
     ]
@@ -246,7 +248,7 @@ def render(snapshot, role='org', active_year='2026'):
     # Year Badge & Date Range (Top right of calendar card)
     c.rect(1096, 250, 72, 28, blue, 6)
     c.text(1132, 269, '2026', 13, '#ffffff', bold=True, anchor='middle')
-    c.text(1080, 269, f'{spec["start"].isoformat()} — {spec["end"].isoformat()} · UTC', 11, '#6e7681', anchor='end')
+    c.text(1080, 269, f'{spec["start"].strftime("%b %d, %Y")} — {spec["end"].strftime("%b %d, %Y")} · UTC', 11, '#6e7681', anchor='end')
 
     # Heatmap Grid
     start = spec['start']
