@@ -36,10 +36,10 @@ Real-time development metrics, continuous contribution heatmap, and activity bre
   <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
 </p>
 
-### 🏢 Peak Frame Organization Activity & Fleet Infrastructure
+### 🏢 Peak Frame Organization & Fleet Infrastructure
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization-activity.svg" width="100%" alt="Peak Frame Organization Activity & Fleet Infrastructure" />
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization.svg" width="100%" alt="Peak Frame Private Limited — Enterprise Fleet & Infrastructure" />
 </p>
 
 <div align="center">
