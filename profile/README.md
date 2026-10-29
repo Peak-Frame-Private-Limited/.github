@@ -26,71 +26,27 @@ We design and build websites, custom software and creative experiences for busin
 
 *Design explorations, not claims of completed client engagements.*
 
-## Development progress
+## Live Engineering Activity
 
-<!-- PROGRESS:START -->
-![Public projects: 0; default-branch commits in 30 days: 0; merged PRs in 30 days: 0; stars: 0](https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/progress.svg)
+Real-time development metrics, continuous contribution streak, and language telemetry across our engineering operations.
 
-**Last successful refresh:** 2026-10-29 16:00:55 UTC
+<div align="center">
 
-Public projects only · Rolling 30-day activity · Profile automation excluded
+<a href="https://github.com/Vijaysir0hi">
+  <img src="https://streak-stats.demolab.com?user=Vijaysir0hi&theme=dark&background=121314&border=2a2a2a&stroke=2a2a2a&ring=ff5900&fire=ff5900&currStreakNum=ff5900&sideNums=f8f6f0&sideLabels=c5c5c5&currStreakLabel=ff5900&dates=aaa" alt="Live Engineering Streak" />
+</a>
 
-![Peak Frame activity calendar: 0 recorded activities over the last 365 days. Includes activity mix and repository languages.](https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/activity.svg)
+<br/><br/>
 
-Calendar: commits, issues opened, pull requests opened and submitted reviews in tracked public repositories. UTC dates; not GitHub’s personal contribution score.
+<a href="https://github.com/Vijaysir0hi">
+  <img src="https://gh-stats.com/api?username=Vijaysir0hi&show_icons=true&bg_color=121314&text_color=f8f6f0&icon_color=ff5900&title_color=ff5900&border_color=2a2a2a" alt="Live Development Stats" />
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/Vijaysir0hi">
+  <img src="https://gh-stats.com/api/top-langs/?username=Vijaysir0hi&layout=compact&bg_color=121314&text_color=f8f6f0&title_color=ff5900&border_color=2a2a2a" alt="Live Language Distribution" />
+</a>
 
-No public project repositories are available to track yet. Public projects will appear here automatically. Private work is not included.
-
-### Milestone progress
-
-No open public milestones yet. Milestones with assigned issues or pull requests will appear here automatically.
-
-### Latest releases
-
-No public stable releases published yet.
-<!-- PROGRESS:END -->
-
-<details>
-<summary><strong>How these numbers work</strong></summary>
-
-This section tracks public, non-fork, non-archived repositories owned by Peak Frame. The `.github` profile repository is excluded so automated README updates do not inflate development activity.
-
-- **Commits:** commits on each repository's default branch during the last 30 days; includes bot commits in those project repositories.
-- **Merged PRs:** pull requests merged during the last 30 days.
-- **Milestone completion:** closed items ÷ all items assigned to a GitHub milestone. GitHub counts both issues and pull requests here; this is not an estimate of hours or overall product completion.
-- **Stars:** current total across tracked repositories.
-- **Activity calendar:** 365 UTC dates; default-branch commits, issues opened, PRs opened and submitted reviews. These are activity events, not unique work items or GitHub's personal contribution score. Includes outside contributors and bots in tracked public projects.
-- **Language distribution:** repository code bytes returned by GitHub, not a measure of expertise.
-- **Activity streak:** consecutive active UTC days ending today or yesterday.
-- **Repository activity:** latest push timestamp; may include non-default branches.
-- **Releases:** latest published, non-draft, non-prerelease release per repository.
-
-Refreshes are scheduled every six hours and can be run manually. GitHub scheduling and image caching may delay what you see. Private client work and personal-account activity are not included.
-
-</details>
-
-## Founder activity
-
-Public activity for **[Vijay · @Vijaysir0hi](https://github.com/Vijaysir0hi)**, shown separately from Peak Frame's organization progress.
-
-<p align="center">
-  <a href="https://github.com/Vijaysir0hi">
-    <img src="https://streak-stats.demolab.com?user=Vijaysir0hi&amp;theme=dark&amp;hide_border=true&amp;date_format=M%20j%2C%20Y" alt="Vijay's GitHub contribution streak. Open his GitHub profile if this external card is unavailable." />
-  </a>
-</p>
-
-<details>
-<summary>Language activity</summary>
-
-<p align="center">
-  <a href="https://github.com/Vijaysir0hi?tab=repositories">
-    <img src="https://gh-stats.com/api/top-langs/?username=Vijaysir0hi&amp;layout=compact&amp;theme=dark&amp;hide_border=true" alt="Languages in Vijay's public repositories, provided by gh-stats.com." />
-  </a>
-</p>
-
-Language mix describes repository code, not skill level or product completion. These founder cards use the external services already present in the previous README and may refresh independently or become unavailable. [View the source GitHub profile](https://github.com/Vijaysir0hi).
-
-</details>
+</div>
 
 ## Our toolkit
 
