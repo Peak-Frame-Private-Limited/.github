@@ -8,14 +8,15 @@ def generate_svg():
     height = 200
     
     steps = [
-        {"num": "01", "name": "DISCOVER", "sub": "Research & Specs", "color": "#388bfd", "bg": "#121d2f"},
-        {"num": "02", "name": "DESIGN", "sub": "UI/UX & Systems", "color": "#a371f7", "bg": "#1f1533"},
+        {"num": "01", "name": "DISCOVER", "sub": "Research &amp; Specs", "color": "#388bfd", "bg": "#121d2f"},
+        {"num": "02", "name": "DESIGN", "sub": "UI/UX &amp; Systems", "color": "#a371f7", "bg": "#1f1533"},
         {"num": "03", "name": "BUILD", "sub": "Edge Architecture", "color": "#2ea043", "bg": "#13231b"},
         {"num": "04", "name": "LAUNCH", "sub": "Global CDN Deploy", "color": "#d29922", "bg": "#281e10"},
-        {"num": "05", "name": "CARE", "sub": "Telemetry & Care", "color": "#ff5900", "bg": "#2e160e"},
+        {"num": "05", "name": "CARE", "sub": "Telemetry &amp; Care", "color": "#ff5900", "bg": "#2e160e"},
     ]
     
     svg = []
+    svg.append('<?xml version="1.0" encoding="UTF-8"?>')
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Peak Frame Delivery Workflow">')
     # Background
     svg.append(f'  <rect x="0" y="0" width="{width}" height="{height}" rx="14" fill="#0d1013" stroke="none"/>')
@@ -57,7 +58,8 @@ def generate_svg():
 
 if __name__ == '__main__':
     content = generate_svg()
-    out_path = '/Users/vijaysirohi/.gemini/antigravity-ide/scratch/github-org/profile/assets/delivery-workflow.svg'
-    with open(out_path, 'w', encoding='utf-8') as f:
-        f.write(content)
-    print("Generated delivery-workflow.svg successfully.")
+    for name in ['delivery-workflow.svg', 'delivery-workflow-live.svg']:
+        out_path = f'/Users/vijaysirohi/.gemini/antigravity-ide/scratch/github-org/profile/assets/{name}'
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+    print("Generated delivery-workflow.svg and delivery-workflow-live.svg successfully.")

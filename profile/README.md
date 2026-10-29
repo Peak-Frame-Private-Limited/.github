@@ -26,7 +26,7 @@
 We design and engineer bespoke web platforms, high-performance distributed cloud software, and creative digital experiences for growing businesses. This repository hub shares our open architectural blueprints, client design explorations, and developer tooling.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/delivery-workflow.svg" width="100%" alt="Peak Frame Engineering Delivery Lifecycle" />
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/delivery-workflow-live.svg" width="100%" alt="Peak Frame Engineering Delivery Lifecycle" />
 </p>
 
 ---

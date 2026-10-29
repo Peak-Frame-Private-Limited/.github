@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="Peak Frame Delivery Workflow">
+  <rect x="0" y="0" width="1200" height="200" rx="14" fill="#0d1013" stroke="none"/>
+  <rect x="24" y="16" width="1152" height="168" rx="12" fill="#13171b" stroke="#30363c" stroke-width="1"/>
+  <rect x="44" y="32" width="4" height="18" rx="2" fill="#ff5900"/>
+  <text x="56" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#f6f2e9" letter-spacing="1">ENGINEERING DELIVERY LIFECYCLE</text>
+  <text x="320" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#8b949e">End-to-end execution from architecture to global edge delivery</text>
+    <line x1="250" y1="114" x2="265" y2="114" stroke="#30363c" stroke-width="2"/>
+    <polygon points="265,110 270,114 265,118" fill="#ff5900"/>
+    <rect x="44" y="66" width="206" height="96" rx="8" fill="#121d2f" stroke="#388bfd" stroke-width="1.2" stroke-opacity="0.6"/>
+    <rect x="56" y="78" width="32" height="20" rx="4" fill="#388bfd" fill-opacity="0.2"/>
+    <text x="72" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#388bfd" text-anchor="middle">01</text>
+    <text x="58" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f6f2e9">DISCOVER</text>
+    <text x="58" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#a5a8ac">Research &amp; Specs</text>
+    <line x1="481" y1="114" x2="496" y2="114" stroke="#30363c" stroke-width="2"/>
+    <polygon points="496,110 501,114 496,118" fill="#ff5900"/>
+    <rect x="275" y="66" width="206" height="96" rx="8" fill="#1f1533" stroke="#a371f7" stroke-width="1.2" stroke-opacity="0.6"/>
+    <rect x="287" y="78" width="32" height="20" rx="4" fill="#a371f7" fill-opacity="0.2"/>
+    <text x="303" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#a371f7" text-anchor="middle">02</text>
+    <text x="289" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f6f2e9">DESIGN</text>
+    <text x="289" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#a5a8ac">UI/UX &amp; Systems</text>
+    <line x1="712" y1="114" x2="727" y2="114" stroke="#30363c" stroke-width="2"/>
+    <polygon points="727,110 732,114 727,118" fill="#ff5900"/>
+    <rect x="506" y="66" width="206" height="96" rx="8" fill="#13231b" stroke="#2ea043" stroke-width="1.2" stroke-opacity="0.6"/>
+    <rect x="518" y="78" width="32" height="20" rx="4" fill="#2ea043" fill-opacity="0.2"/>
+    <text x="534" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#2ea043" text-anchor="middle">03</text>
+    <text x="520" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f6f2e9">BUILD</text>
+    <text x="520" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#a5a8ac">Edge Architecture</text>
+    <line x1="943" y1="114" x2="958" y2="114" stroke="#30363c" stroke-width="2"/>
+    <polygon points="958,110 963,114 958,118" fill="#ff5900"/>
+    <rect x="737" y="66" width="206" height="96" rx="8" fill="#281e10" stroke="#d29922" stroke-width="1.2" stroke-opacity="0.6"/>
+    <rect x="749" y="78" width="32" height="20" rx="4" fill="#d29922" fill-opacity="0.2"/>
+    <text x="765" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#d29922" text-anchor="middle">04</text>
+    <text x="751" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f6f2e9">LAUNCH</text>
+    <text x="751" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#a5a8ac">Global CDN Deploy</text>
+    <rect x="968" y="66" width="206" height="96" rx="8" fill="#2e160e" stroke="#ff5900" stroke-width="1.2" stroke-opacity="0.6"/>
+    <rect x="980" y="78" width="32" height="20" rx="4" fill="#ff5900" fill-opacity="0.2"/>
+    <text x="996" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#ff5900" text-anchor="middle">05</text>
+    <text x="982" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f6f2e9">CARE</text>
+    <text x="982" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#a5a8ac">Telemetry &amp; Care</text>
+</svg>
