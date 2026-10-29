@@ -54,17 +54,18 @@ def collect_live():
     progress_file = ROOT / "profile" / "progress.json"
     try:
         token = get_token()
-        now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+        IST = dt.timezone(dt.timedelta(hours=5, minutes=30), name="IST")
+        now = dt.datetime.now(IST).replace(microsecond=0)
         current_year = now.year
         start = dt.date(current_year, 1, 1)
         end = dt.date(current_year, 12, 31)
         days_in_year = (end - start).days + 1
 
-        # 1. Fetch user contributions calendar for full calendar year via GraphQL
+        # 1. Fetch user contributions calendar for full calendar year via GraphQL in Indian Standard Time (IST)
         gql_query = f"""
         query {{
           user(login: "Vijaysir0hi") {{
-            contributionsCollection(from: "{start.isoformat()}T00:00:00Z", to: "{end.isoformat()}T23:59:59Z") {{
+            contributionsCollection(from: "{start.isoformat()}T00:00:00+05:30", to: "{end.isoformat()}T23:59:59+05:30") {{
               totalCommitContributions
               totalIssueContributions
               totalPullRequestContributions

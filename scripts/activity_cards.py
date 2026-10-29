@@ -257,7 +257,7 @@ def render(snapshot, role='org', active_year='2026'):
     # Year Badge & Date Range (Top right of calendar card)
     c.rect(1096, 250, 72, 28, blue, 6)
     c.text(1132, 269, str(active_year), 13, '#ffffff', bold=True, anchor='middle')
-    c.text(1080, 269, f'{spec["start"].strftime("%b %d, %Y")} — {spec["end"].strftime("%b %d, %Y")} · UTC', 11, '#6e7681', anchor='end')
+    c.text(1080, 269, f'{spec["start"].strftime("%b %d, %Y")} — {spec["end"].strftime("%b %d, %Y")} · IST', 11, '#6e7681', anchor='end')
 
     # Heatmap Grid
     start = spec['start']
