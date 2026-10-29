@@ -1,70 +1,113 @@
-<div align="center">
+<p align="center">
+  <a href="https://www.peakframe.in/">
+    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/peakframe-cover.png" width="100%" alt="Peakframe — A sharper digital presence. Websites, software and creative for businesses ready to grow. Atelier salon and Northway logistics are concept projects. Services: websites, custom software, ad creatives and website care." />
+  </a>
+</p>
 
-# Peak Frame
+<p align="center">
+  <a href="https://www.peakframe.in/">Website</a> ·
+  <a href="https://www.peakframe.in/work">Explore our work</a> ·
+  <a href="mailto:sales@peakframe.in">Start a conversation</a> ·
+  <a href="https://wa.me/917717691945">WhatsApp</a>
+</p>
 
-**A sharper digital presence.**
+## Building at Peak Frame
 
-[![Verified](https://img.shields.io/badge/GitHub-Verified_Domain-108548?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Peak-Frame-Private-Limited)
-[![Website](https://img.shields.io/badge/Website-peakframe.in-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.peakframe.in)
-[![Email](https://img.shields.io/badge/Contact-sales@peakframe.in-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sales@peakframe.in)
+We design and build websites, custom software and creative experiences for businesses. This is where we share our public development work, tools and experiments.
 
-[![X](https://img.shields.io/badge/X-@peakframe__in-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/peakframe_in)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Peak_Frame-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/peakframe-in)
-[![Instagram](https://img.shields.io/badge/Instagram-@peakframe.in-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/peakframe.in)
-[![YouTube](https://img.shields.io/badge/YouTube-@Peakframe__in-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@Peakframe_in)
+**Discover → Design → Build → Launch → Ongoing care**
 
----
+### Selected concepts
 
-</div>
+| Concept | Focus | Explore |
+| :--- | :--- | :--- |
+| **Atelier** | A salon website and booking experience | [View concept](https://www.peakframe.in/work/solara-salon) |
+| **Northway** | A digital presence for a logistics business | [View concept](https://www.peakframe.in/work/nexa-logistics) |
 
-## 🌐 About Peak Frame
+*Design explorations, not claims of completed client engagements.*
 
-Peak Frame designs, engineers, and operates high-performance web systems, developer tooling, and modern digital platforms. We build resilient cloud infrastructure and developer-first applications tailored for scale, security, and elegance.
+## Development progress
 
-### ⚡ Core Focus Areas
+<!-- PROGRESS:START -->
+![Public projects: 0; default-branch commits in 30 days: 0; merged PRs in 30 days: 0; stars: 0](https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/progress.svg)
 
-- **Modern Web Platforms:** Scalable Next.js, React, and TypeScript applications engineered with edge performance and crisp UX.
-- **Backend & Cloud Architecture:** Cloudflare Edge, Serverless, and high-throughput Python / Node microservices.
-- **Open Source Tooling:** Contributing to foundational developer ecosystems, libraries, and reliability frameworks.
-- **Infrastructure & Security:** DNS management, verified authentication, zero-trust setups, and robust CI/CD automation.
+**Last successful refresh:** 2026-10-29 16:00:55 UTC
 
----
+Public projects only · Rolling 30-day activity · Profile automation excluded
 
-## 🛠️ Technology Stack
+![Peak Frame activity calendar: 0 recorded activities over the last 365 days. Includes activity mix and repository languages.](https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/activity.svg)
 
-<div align="center">
+Calendar: commits, issues opened, pull requests opened and submitted reviews in tracked public repositories. UTC dates; not GitHub’s personal contribution score.
+
+No public project repositories are available to track yet. Public projects will appear here automatically. Private work is not included.
+
+### Milestone progress
+
+No open public milestones yet. Milestones with assigned issues or pull requests will appear here automatically.
+
+### Latest releases
+
+No public stable releases published yet.
+<!-- PROGRESS:END -->
+
+<details>
+<summary><strong>How these numbers work</strong></summary>
+
+This section tracks public, non-fork, non-archived repositories owned by Peak Frame. The `.github` profile repository is excluded so automated README updates do not inflate development activity.
+
+- **Commits:** commits on each repository's default branch during the last 30 days; includes bot commits in those project repositories.
+- **Merged PRs:** pull requests merged during the last 30 days.
+- **Milestone completion:** closed items ÷ all items assigned to a GitHub milestone. GitHub counts both issues and pull requests here; this is not an estimate of hours or overall product completion.
+- **Stars:** current total across tracked repositories.
+- **Activity calendar:** 365 UTC dates; default-branch commits, issues opened, PRs opened and submitted reviews. These are activity events, not unique work items or GitHub's personal contribution score. Includes outside contributors and bots in tracked public projects.
+- **Language distribution:** repository code bytes returned by GitHub, not a measure of expertise.
+- **Activity streak:** consecutive active UTC days ending today or yesterday.
+- **Repository activity:** latest push timestamp; may include non-default branches.
+- **Releases:** latest published, non-draft, non-prerelease release per repository.
+
+Refreshes are scheduled every six hours and can be run manually. GitHub scheduling and image caching may delay what you see. Private client work and personal-account activity are not included.
+
+</details>
+
+## Founder activity
+
+Public activity for **[Vijay · @Vijaysir0hi](https://github.com/Vijaysir0hi)**, shown separately from Peak Frame's organization progress.
+
+<p align="center">
+  <a href="https://github.com/Vijaysir0hi">
+    <img src="https://streak-stats.demolab.com?user=Vijaysir0hi&amp;theme=dark&amp;hide_border=true&amp;date_format=M%20j%2C%20Y" alt="Vijay's GitHub contribution streak. Open his GitHub profile if this external card is unavailable." />
+  </a>
+</p>
+
+<details>
+<summary>Language activity</summary>
+
+<p align="center">
+  <a href="https://github.com/Vijaysir0hi?tab=repositories">
+    <img src="https://gh-stats.com/api/top-langs/?username=Vijaysir0hi&amp;layout=compact&amp;theme=dark&amp;hide_border=true" alt="Languages in Vijay's public repositories, provided by gh-stats.com." />
+  </a>
+</p>
+
+Language mix describes repository code, not skill level or product completion. These founder cards use the external services already present in the previous README and may refresh independently or become unavailable. [View the source GitHub profile](https://github.com/Vijaysir0hi).
+
+</details>
+
+## Our toolkit
 
 | Area | Technologies |
-|---|---|
-| **Frontend** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) ![HTML5/CSS3](https://img.shields.io/badge/HTML5%2FCSS3-E34F26?style=flat-square&logo=html5&logoColor=white) |
-| **Backend & APIs** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) |
-| **Cloud & Edge** | ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
-| **Data & Storage** | ![Cloudflare D1](https://img.shields.io/badge/Cloudflare_D1_(SQL)-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Cloudflare R2](https://img.shields.io/badge/Cloudflare_R2_(Storage)-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Cloudflare KV](https://img.shields.io/badge/Cloudflare_KV-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white) |
+| :--- | :--- |
+| Web interfaces | Next.js · React · TypeScript · HTML · CSS |
+| Backend & APIs | Python · FastAPI · Node.js |
+| Cloud & deployment | Cloudflare Workers · Cloudflare Pages · Vercel · Docker |
+| Data & storage | PostgreSQL · SQLite · Cloudflare D1 · R2 · KV |
 
-</div>
+## Let’s build your next chapter
 
----
+Have a website, software product or creative brief in mind? Tell us what you want to build.
 
-## 📈 Activity & Contribution Overview
+**[sales@peakframe.in](mailto:sales@peakframe.in)** · **[+91 77176 91945](https://wa.me/917717691945)** · **[peakframe.in](https://www.peakframe.in/)**
 
-<div align="center">
-
-[![Vijay's GitHub Streak](https://streak-stats.demolab.com?user=Vijaysir0hi&theme=dark&hide_border=true&date_format=M%20j%2C%20Y)](https://github.com/Vijaysir0hi)
-
-[![Vijay's GitHub Stats](https://gh-stats.com/api?username=Vijaysir0hi&show_icons=true&theme=dark&hide_border=true)](https://github.com/Vijaysir0hi)
-[![Top Languages](https://gh-stats.com/api/top-langs/?username=Vijaysir0hi&layout=compact&theme=dark&hide_border=true)](https://github.com/Vijaysir0hi)
-
-</div>
+[LinkedIn](https://www.linkedin.com/company/peakframe-in) · [Instagram](https://www.instagram.com/peakframe.in) · [YouTube](https://www.youtube.com/@Peakframe_in) · [X](https://x.com/peakframe_in)
 
 ---
-
-## 🤝 Open Source & Collaboration
-
-We actively contribute to open-source software across ecosystems and welcome collaboration.
-
-- **Explore Our Projects:** Check out our [repositories](https://github.com/orgs/Peak-Frame-Private-Limited/repositories) for open-source tools and starters.
-- **Get in Touch:** Reach out at [sales@peakframe.in](mailto:sales@peakframe.in) or visit [peakframe.in](https://www.peakframe.in).
-
-<div align="center">
-<sub>© 2026 Peak Frame Private Limited · Built with precision.</sub>
-</div>
+<sub>Peak Frame · Websites. Software. Creative.</sub>
