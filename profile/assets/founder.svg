@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-label="Vijay Sirohi Founder Activity">
+  <defs>
+    <linearGradient id="founderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181c20"/>
+      <stop offset="100%" stop-color="#121314"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="230" rx="14" fill="url(#founderGlow)" stroke="#262c33" stroke-width="1.5"/>
+  
+  <!-- Left Orange Accent -->
+  <rect x="32" y="28" width="5" height="22" rx="2.5" fill="#ff5900"/>
+  <text x="50" y="45" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="1">VIJAY SIROHI / FOUNDER &amp; LEAD ARCHITECT</text>
+  
+  <!-- Pill Badge -->
+  <rect x="1040" y="26" width="128" height="26" rx="13" fill="rgba(255, 89, 0, 0.15)" stroke="rgba(255, 89, 0, 0.4)" stroke-width="1"/>
+  <circle cx="1055" cy="39" r="4" fill="#ff5900"/>
+  <text x="1068" y="44" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">FOUNDER</text>
+
+  <!-- Metric 1: Anthropic Track -->
+  <text x="40" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">5 / 100</text>
+  <text x="40" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">ANTHROPIC 100-PR TRACK</text>
+  <text x="40" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Batch 1 Shipped · 1 Merged Upstream</text>
+
+  <!-- Divider 1 -->
+  <line x1="320" y1="80" x2="320" y2="175" stroke="#262c33" stroke-width="1"/>
+
+  <!-- Metric 2: Contributions -->
+  <text x="350" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">29</text>
+  <text x="350" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">PUBLIC CONTRIBUTIONS</text>
+  <text x="350" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">365-Day Activity Telemetry</text>
+
+  <!-- Divider 2 -->
+  <line x1="620" y1="80" x2="620" y2="175" stroke="#262c33" stroke-width="1"/>
+
+  <!-- Metric 3: Active Streak -->
+  <text x="650" y="122" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">2 DAYS</text>
+  <text x="650" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">ENGINEERING STREAK</text>
+  <text x="650" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Continuous Code Commits</text>
+
+  <!-- Divider 3 -->
+  <line x1="910" y1="80" x2="910" y2="175" stroke="#262c33" stroke-width="1"/>
+
+  <!-- Metric 4: Primary Focus -->
+  <text x="940" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800">AI &amp; WEB</text>
+  <text x="940" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">CORE SYSTEMS</text>
+  <text x="940" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Python · TypeScript · FastAPI</text>
+
+  <!-- Bottom Bar -->
+  <circle cx="40" cy="207" r="4" fill="#238636"/>
+  <text x="52" y="211" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Lead Architect @ Peak Frame · Personal GitHub: Vijaysir0hi · Vijay@peakframe.in</text>
+</svg>

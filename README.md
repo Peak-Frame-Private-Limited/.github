@@ -26,16 +26,22 @@ We design and build websites, custom software and creative experiences for busin
 
 *Design explorations, not claims of completed client engagements.*
 
-## Live Engineering Activity
+## Live Engineering & Corporate Telemetry
 
-Real-time development metrics, continuous contribution streak, and telemetry across our open-source engineering operations.
+Real-time development metrics, continuous contribution streak, and telemetry across the Founder and Peak Frame Organization.
 
+### 👤 Founder & Lead Architect Telemetry
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/progress.svg" width="100%" alt="Peak Frame Public Development Progress" />
+  <a href="https://github.com/Vijaysir0hi">
+    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder.svg" width="100%" alt="Vijay Sirohi — Founder & Lead Architect Telemetry" />
+  </a>
 </p>
 
+### 🏢 Peak Frame Organization & Fleet Infrastructure
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/activity.svg" width="100%" alt="Peak Frame Engineering Activity Dashboard" />
+  <a href="https://github.com/Peak-Frame-Private-Limited">
+    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization.svg" width="100%" alt="Peak Frame Private Limited — Enterprise Fleet & Infrastructure" />
+  </a>
 </p>
 
 <div align="center">
