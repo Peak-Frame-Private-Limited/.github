@@ -49,13 +49,10 @@ Peak Frame designs, engineers, and operates high-performance web systems, develo
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Vijaysir0hi&theme=github-compact&hide_border=true&area=true)](https://github.com/Vijaysir0hi)
-
-</div>
-
-<div align="center">
-
 [![Vijay's GitHub Streak](https://streak-stats.demolab.com?user=Vijaysir0hi&theme=dark&hide_border=true&date_format=M%20j%2C%20Y)](https://github.com/Vijaysir0hi)
+
+[![Vijay's GitHub Stats](https://gh-stats.com/api?username=Vijaysir0hi&show_icons=true&theme=dark&hide_border=true)](https://github.com/Vijaysir0hi)
+[![Top Languages](https://gh-stats.com/api/top-langs/?username=Vijaysir0hi&layout=compact&theme=dark&hide_border=true)](https://github.com/Vijaysir0hi)
 
 </div>
 
