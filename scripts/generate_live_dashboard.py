@@ -174,6 +174,7 @@ def main():
         fnd_svg = render(snapshot, role="founder", active_year=yr).svg(f"Vijay Sirohi Founder Activity {yr}")
         if yr == "2026":
             (assets_dir / "founder-activity.svg").write_text(fnd_svg, encoding="utf-8")
+            (assets_dir / "founder-activity-live.svg").write_text(fnd_svg, encoding="utf-8")
         else:
             (assets_dir / f"founder-activity-{yr}.svg").write_text(fnd_svg, encoding="utf-8")
 
