@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.peakframe.in/">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/peakframe-cover.png" width="100%" alt="Peakframe — A sharper digital presence. Websites, software and creative for businesses ready to grow. Atelier salon and Northway logistics are concept projects. Services: websites, custom software, ad creatives and website care." />
+    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/peakframe-cover.png" width="100%" alt="Peakframe — A sharper digital presence. Websites, software and creative for businesses ready to grow. Atelier salon and Northway logistics are concept projects. Services: websites, custom software, ad creatives and website care." />
   </a>
 </p>
 
