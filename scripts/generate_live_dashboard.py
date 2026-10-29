@@ -55,36 +55,38 @@ def collect_live():
     try:
         token = get_token()
         now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-        # 1. Fetch user contributions calendar for full calendar year 2026 via GraphQL
-        gql_query = """
-        query {
-          user(login: "Vijaysir0hi") {
-            contributionsCollection(from: "2026-01-01T00:00:00Z", to: "2026-12-31T23:59:59Z") {
+        current_year = now.year
+        start = dt.date(current_year, 1, 1)
+        end = dt.date(current_year, 12, 31)
+        days_in_year = (end - start).days + 1
+
+        # 1. Fetch user contributions calendar for full calendar year via GraphQL
+        gql_query = f"""
+        query {{
+          user(login: "Vijaysir0hi") {{
+            contributionsCollection(from: "{start.isoformat()}T00:00:00Z", to: "{end.isoformat()}T23:59:59Z") {{
               totalCommitContributions
               totalIssueContributions
               totalPullRequestContributions
               totalPullRequestReviewContributions
-              contributionCalendar {
+              contributionCalendar {{
                 totalContributions
-                weeks {
-                  contributionDays {
+                weeks {{
+                  contributionDays {{
                     date
                     contributionCount
-                  }
-                }
-              }
-            }
-          }
-        }
+                  }}
+                }}
+              }}
+            }}
+          }}
+        }}
         """
         res = run_graphql(token, gql_query)
         coll = res["data"]["user"]["contributionsCollection"]
         cal = coll["contributionCalendar"]
         
-        start = dt.date(2026, 1, 1)
-        end = dt.date(2026, 12, 31)
-
-        daily = { (start + dt.timedelta(days=i)).isoformat(): 0 for i in range(365) }
+        daily = { (start + dt.timedelta(days=i)).isoformat(): 0 for i in range(days_in_year) }
         for w in cal.get("weeks", []):
             for d in w.get("contributionDays", []):
                 date_str = d.get("date")
@@ -156,19 +158,22 @@ def main():
     assets_dir = ROOT / "profile" / "assets"
     assets_dir.mkdir(parents=True, exist_ok=True)
 
+    current_year_str = str(dt.datetime.now(dt.timezone.utc).year)
+    years_to_render = sorted(list(set([current_year_str, "2026", "2025", "2024"])), reverse=True)
+
     # 1. Organization Activity Dashboard (Top)
-    for yr in ["2026", "2025", "2024"]:
+    for yr in years_to_render:
         org_svg = render(snapshot, role="org", active_year=yr).svg(f"Peak Frame Organization Activity {yr}")
-        if yr == "2026":
+        if yr == current_year_str:
             (assets_dir / "activity.svg").write_text(org_svg, encoding="utf-8")
             (assets_dir / "organization-activity.svg").write_text(org_svg, encoding="utf-8")
         else:
             (assets_dir / f"organization-activity-{yr}.svg").write_text(org_svg, encoding="utf-8")
 
     # 2. Founder Activity Dashboard (2nd)
-    for yr in ["2026", "2025", "2024"]:
+    for yr in years_to_render:
         fnd_svg = render(snapshot, role="founder", active_year=yr).svg(f"Vijay Sirohi Founder Activity {yr}")
-        if yr == "2026":
+        if yr == current_year_str:
             (assets_dir / "founder-activity.svg").write_text(fnd_svg, encoding="utf-8")
             (assets_dir / "founder-activity-live.svg").write_text(fnd_svg, encoding="utf-8")
         else:

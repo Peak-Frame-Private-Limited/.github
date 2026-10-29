@@ -99,11 +99,19 @@ class Canvas:
 
 def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
     """Returns exact date range, daily map, and top-line metrics per year and scope."""
-    if active_year == '2026':
-        start_date = dt.date(2026, 1, 1)
-        end_date = dt.date(2026, 12, 31)
-        daily = dict(live_daily)
-        for i in range(365):
+    try:
+        y_int = int(active_year)
+    except Exception:
+        y_int = dt.datetime.now(dt.timezone.utc).year
+
+    current_year_int = dt.datetime.now(dt.timezone.utc).year
+
+    if y_int >= 2026:
+        start_date = dt.date(y_int, 1, 1)
+        end_date = dt.date(y_int, 12, 31)
+        days_count = (end_date - start_date).days + 1
+        daily = dict(live_daily) if (y_int == current_year_int and live_daily) else {}
+        for i in range(days_count):
             d_str = (start_date + dt.timedelta(days=i)).isoformat()
             if d_str not in daily:
                 daily[d_str] = 0
@@ -115,7 +123,7 @@ def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
             streak_days = 2
             longest_streak = 2
         else:
-            # Founder 2026 dynamic calculation from live GitHub telemetry
+            # Founder dynamic calculation from live GitHub telemetry
             repos_count = max(repos_count, 8)
             repos_label = "TRACKED REPOSITORIES"
             daily_vals = [v for v in daily.values() if v > 0]
@@ -218,7 +226,8 @@ def render(snapshot, role='org', active_year='2026'):
     is_founder = (role == 'founder')
     title = 'VIJAY SIROHI / FOUNDER ACTIVITY & ARCHITECTURE' if is_founder else 'PEAK FRAME / ENGINEERING ACTIVITY'
     subtitle = 'Personal engineering activity · Core architecture · Continuous development' if is_founder else 'Open source engineering & public development · Continuous Telemetry'
-    if active_year != '2026':
+    current_year_str = str(dt.datetime.now(dt.timezone.utc).year)
+    if active_year != current_year_str:
         title += f' ({active_year} ARCHIVE)'
 
     c.rect(0, 0, 1200, 900, '#0d1013', 16)
@@ -247,7 +256,7 @@ def render(snapshot, role='org', active_year='2026'):
 
     # Year Badge & Date Range (Top right of calendar card)
     c.rect(1096, 250, 72, 28, blue, 6)
-    c.text(1132, 269, '2026', 13, '#ffffff', bold=True, anchor='middle')
+    c.text(1132, 269, str(active_year), 13, '#ffffff', bold=True, anchor='middle')
     c.text(1080, 269, f'{spec["start"].strftime("%b %d, %Y")} — {spec["end"].strftime("%b %d, %Y")} · UTC', 11, '#6e7681', anchor='end')
 
     # Heatmap Grid
