@@ -30,53 +30,17 @@ We design and build websites, custom software and creative experiences for busin
 
 Real-time development metrics, continuous contribution heatmap, and activity breakdown across the Peak Frame Organization and Founder.
 
-### 🏢 Peak Frame Organization Activity & Fleet Infrastructure
-
-<details open>
-  <summary><b>📅 2026 Telemetry (Live / Active)</b></summary>
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization-activity.svg" width="100%" alt="Peak Frame Organization Activity 2026" />
-  </p>
-</details>
-
-<details>
-  <summary><b>📅 2025 Archive Telemetry</b></summary>
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization-activity-2025.svg" width="100%" alt="Peak Frame Organization Activity 2025 Archive" />
-  </p>
-</details>
-
-<details>
-  <summary><b>📅 2024 Foundation Archive</b></summary>
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization-activity-2024.svg" width="100%" alt="Peak Frame Organization Activity 2024 Archive" />
-  </p>
-</details>
-
-<br/>
-
 ### 👤 Founder Progress & Engineering Architecture
 
-<details open>
-  <summary><b>📅 2026 Architecture & Telemetry (Live / Active)</b></summary>
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg" width="100%" alt="Vijay Sirohi — Founder Activity & Architecture 2026" />
-  </p>
-</details>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
+</p>
 
-<details>
-  <summary><b>📅 2025 Architecture Archive</b></summary>
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity-2025.svg" width="100%" alt="Vijay Sirohi — Founder Activity 2025 Archive" />
-  </p>
-</details>
+### 🏢 Peak Frame Organization Activity & Fleet Infrastructure
 
-<details>
-  <summary><b>📅 2024 Foundation Architecture Archive</b></summary>
-  <p align="center">
-    <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity-2024.svg" width="100%" alt="Vijay Sirohi — Founder Activity 2024 Archive" />
-  </p>
-</details>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization-activity.svg" width="100%" alt="Peak Frame Organization Activity & Fleet Infrastructure" />
+</p>
 
 <div align="center">
 

@@ -242,26 +242,10 @@ def render(snapshot, role='org', active_year='2026'):
     c.rect(28, 234, 1144, 265, '#13171b', 12, '#30363c')
     c.text(51, 270, 'Activity calendar', 21, bold=True)
 
-    # Year Selector Component (Top right of calendar card)
-    years = ['2026', '2025', '2024']
-    start_x = 940
-    base_asset_name = 'founder-activity' if is_founder else 'organization-activity'
-    
-    for idx, yr in enumerate(years):
-        bx = start_x + idx * 72
-        if yr == active_year:
-            c.rect(bx, 250, 64, 28, blue, 6)
-            c.text(bx + 32, 269, yr, 13, '#ffffff', bold=True, anchor='middle')
-        else:
-            target_file = f"{base_asset_name}.svg" if yr == "2026" else f"{base_asset_name}-{yr}.svg"
-            target_url = f"https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/{target_file}"
-            c.link_start(target_url)
-            c.rect(bx, 250, 64, 28, '#1b2026', 6, '#262c33')
-            c.text(bx + 32, 269, yr, 13, muted, bold=False, anchor='middle')
-            c.link_end()
-
-    # Date Range text
-    c.text(920, 269, f'{spec["start"].isoformat()} — {spec["end"].isoformat()} · UTC', 11, '#6e7681', anchor='end')
+    # Year Badge & Date Range (Top right of calendar card)
+    c.rect(1096, 250, 72, 28, blue, 6)
+    c.text(1132, 269, '2026', 13, '#ffffff', bold=True, anchor='middle')
+    c.text(1080, 269, f'{spec["start"].isoformat()} — {spec["end"].isoformat()} · UTC', 11, '#6e7681', anchor='end')
 
     # Heatmap Grid
     start = spec['start']
