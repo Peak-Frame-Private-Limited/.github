@@ -127,8 +127,7 @@ def svg(snapshot):
                   f'<text x="{x}" y="159" fill="#c5c5c5" font-family="Arial,sans-serif" font-size="14">{label}</text>']
         if i < 3:
             parts.append(f'<path d="M{x+265}82v88" stroke="#393939"/>')
-    stamp = html.escape(snapshot['updated'].replace('T', ' ').replace('Z', ' UTC'))
-    parts.append(f'<text x="36" y="207" fill="#aaa" font-family="Arial,sans-serif" font-size="13">Last successful refresh: {stamp}</text></svg>')
+    parts.append('<text x="36" y="207" fill="#aaa" font-family="Arial,sans-serif" font-size="13">Continuous Telemetry · Active Open-Source Engineering</text></svg>')
     return ''.join(parts)
 
 

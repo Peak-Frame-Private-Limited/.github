@@ -1,7 +1,78 @@
 {
-  "updated": "2026-10-29T16:00:55Z",
+  "updated": "2026-10-29T16:41:18Z",
   "org": "Peak-Frame-Private-Limited",
-  "repos": [],
+  "repos": [
+    {
+      "name": "Archy",
+      "url": "https://github.com/Vijaysir0hi/Archy",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T12:42:01Z"
+    },
+    {
+      "name": "awesome-study-resources",
+      "url": "https://github.com/Vijaysir0hi/awesome-study-resources",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T13:11:15Z"
+    },
+    {
+      "name": "critique",
+      "url": "https://github.com/Vijaysir0hi/critique",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T13:19:51Z"
+    },
+    {
+      "name": "imgproxykit",
+      "url": "https://github.com/Vijaysir0hi/imgproxykit",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T12:53:27Z"
+    },
+    {
+      "name": "maintainer-copilot",
+      "url": "https://github.com/Vijaysir0hi/maintainer-copilot",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-24T12:39:27Z"
+    },
+    {
+      "name": "OmniDL",
+      "url": "https://github.com/Vijaysir0hi/OmniDL",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T13:01:20Z"
+    },
+    {
+      "name": "tourneyradar",
+      "url": "https://github.com/Vijaysir0hi/tourneyradar",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T13:05:06Z"
+    }
+  ],
   "milestones": [],
   "releases": [],
   "activity": {
@@ -320,13 +391,13 @@
       "2026-09-04": 0,
       "2026-09-05": 0,
       "2026-09-06": 0,
-      "2026-09-07": 0,
+      "2026-09-07": 1,
       "2026-09-08": 0,
       "2026-09-09": 0,
       "2026-09-10": 0,
       "2026-09-11": 0,
       "2026-09-12": 0,
-      "2026-09-13": 0,
+      "2026-09-13": 2,
       "2026-09-14": 0,
       "2026-09-15": 0,
       "2026-09-16": 0,
@@ -351,11 +422,11 @@
       "2026-10-05": 0,
       "2026-10-06": 0,
       "2026-10-07": 0,
-      "2026-10-08": 0,
+      "2026-10-08": 1,
       "2026-10-09": 0,
       "2026-10-10": 0,
       "2026-10-11": 0,
-      "2026-10-12": 0,
+      "2026-10-12": 1,
       "2026-10-13": 0,
       "2026-10-14": 0,
       "2026-10-15": 0,
@@ -371,15 +442,27 @@
       "2026-10-25": 0,
       "2026-10-26": 0,
       "2026-10-27": 0,
-      "2026-10-28": 0,
-      "2026-10-29": 0
+      "2026-10-28": 3,
+      "2026-10-29": 21
     },
     "kinds": {
-      "Commits": 0,
-      "Issues": 0,
-      "Pull requests": 0,
-      "Reviews": 0
+      "Commits": 14,
+      "Pull requests": 8,
+      "Issues": 5,
+      "Reviews": 2
     },
-    "languages": {}
+    "languages": {
+      "Python": 3192466,
+      "JavaScript": 180306,
+      "Dockerfile": 746,
+      "Shell": 421,
+      "HTML": 207262,
+      "CSS": 97288,
+      "Makefile": 2280,
+      "Procfile": 19,
+      "Batchfile": 665,
+      "TypeScript": 539272,
+      "PLpgSQL": 26635
+    }
   }
 }

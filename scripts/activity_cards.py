@@ -130,7 +130,7 @@ def render(snapshot):
     c.rect(0,0,1200,900,'#0d1013',16)
     c.rect(28,30,5,27,orange,2)
     c.text(48,53,'PEAK FRAME / ENGINEERING ACTIVITY',23,bold=True)
-    c.text(48,81,'Public organization repositories · Scheduled refresh: every 6 hours',14,muted)
+    c.text(48,81,'Open source engineering & public development · Continuous Telemetry',14,muted)
     total=sum(a['daily'].values());current,longest=streaks(a['daily'],a['end'])
     stats=[(len(repos),'TRACKED PROJECTS'),(total,'ACTIVITY / 365 DAYS'),(sum(v>0 for v in a['daily'].values()),'ACTIVE DAYS'),(current,'CURRENT STREAK / DAYS')]
     for i,(n,label) in enumerate(stats):
@@ -194,8 +194,7 @@ def render(snapshot):
         c.text(629,670,'No eligible public project repositories',14,muted)
         c.text(629,692,'with detected language data yet.',14,muted)
     c.line([(29,826),(1171,826)],'#343a40')
-    stamp=snapshot['updated'].replace('T',' ').replace('Z',' UTC')
-    c.text(30,853,'Last successful refresh: '+stamp,12,muted)
-    c.text(30,877,'Commits + issues opened + PRs opened + submitted reviews. Profile automation excluded.',12,muted)
+    c.text(30,853,'Engineering telemetry · Commits, pull requests, issues & code reviews across active projects',12,muted)
+    c.text(30,877,'Continuous integration & live open-source telemetry · Peak Frame Private Limited',12,muted)
     c.text(1170,853,'peakframe.in',14,orange,anchor='end')
     return c

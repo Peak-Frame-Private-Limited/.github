@@ -28,7 +28,15 @@ We design and build websites, custom software and creative experiences for busin
 
 ## Live Engineering Activity
 
-Real-time development metrics, continuous contribution streak, and language telemetry across our engineering operations.
+Real-time development metrics, continuous contribution streak, and telemetry across our open-source engineering operations.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/progress.svg" width="100%" alt="Peak Frame Public Development Progress" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/HEAD/profile/assets/activity.svg" width="100%" alt="Peak Frame Engineering Activity Dashboard" />
+</p>
 
 <div align="center">
 
