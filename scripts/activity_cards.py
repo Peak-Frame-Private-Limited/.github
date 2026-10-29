@@ -100,9 +100,10 @@ class Canvas:
 def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
     """Returns exact date range, daily map, and top-line metrics per year and scope."""
     if active_year == '2026':
-        start_date = dt.date(2025, 10, 30)
-        end_date = dt.date(2026, 10, 29)
         daily = dict(live_daily)
+        sorted_dates = sorted(daily.keys())
+        end_date = dt.date.fromisoformat(sorted_dates[-1]) if sorted_dates else dt.date(2026, 10, 30)
+        start_date = end_date - dt.timedelta(days=364)
         if not is_founder:
             repos_count = 7
             repos_label = "TRACKED PROJECTS"
@@ -117,11 +118,11 @@ def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
             repos_count = max(repos_count, 8)
             repos_label = "TRACKED REPOSITORIES"
             daily_vals = [v for v in daily.values() if v > 0]
-            total_act = max(sum(daily.values()), 31)
-            active_days = max(len(daily_vals), 6)
+            total_act = sum(daily.values())
+            active_days = len(daily_vals)
             cur_streak, max_streak = streaks(daily, end_date.isoformat())
-            streak_days = max(cur_streak, 2)
-            longest_streak = max(max_streak, 2)
+            streak_days = cur_streak
+            longest_streak = max_streak
         return {
             'start': start_date,
             'end': end_date,

@@ -55,35 +55,39 @@ def collect_live():
     try:
         token = get_token()
         now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-        end = now.date()
-        start = end - dt.timedelta(days=364)
-
-        # 1. Fetch user contributions calendar via GraphQL
-        gql_query = f"""
-        query {{
-          user(login: "Vijaysir0hi") {{
-            contributionsCollection(from: "{start.isoformat()}T00:00:00Z", to: "{end.isoformat()}T23:59:59Z") {{
+        # 1. Fetch user contributions calendar via GraphQL (defaulting to latest calendar year)
+        gql_query = """
+        query {
+          user(login: "Vijaysir0hi") {
+            contributionsCollection {
               totalCommitContributions
               totalIssueContributions
               totalPullRequestContributions
               totalPullRequestReviewContributions
-              contributionCalendar {{
+              contributionCalendar {
                 totalContributions
-                weeks {{
-                  contributionDays {{
+                weeks {
+                  contributionDays {
                     date
                     contributionCount
-                  }}
-                }}
-              }}
-            }}
-          }}
-        }}
+                  }
+                }
+              }
+            }
+          }
+        }
         """
         res = run_graphql(token, gql_query)
         coll = res["data"]["user"]["contributionsCollection"]
         cal = coll["contributionCalendar"]
         
+        all_days = [d["date"] for w in cal.get("weeks", []) for d in w.get("contributionDays", [])]
+        if all_days:
+            end = dt.date.fromisoformat(all_days[-1])
+        else:
+            end = (now + dt.timedelta(hours=5.5)).date()
+        start = end - dt.timedelta(days=364)
+
         daily = { (start + dt.timedelta(days=i)).isoformat(): 0 for i in range(365) }
         for w in cal.get("weeks", []):
             for d in w.get("contributionDays", []):

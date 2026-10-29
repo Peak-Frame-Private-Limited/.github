@@ -14,7 +14,7 @@
 ### 👤 Founder Progress & Engineering Architecture
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg?v=4" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg?v=5" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
 </p>
 
 ## Building at Peak Frame
