@@ -44,8 +44,8 @@ def sync():
     run_cmd(["git", "add", "profile/assets/", "profile/progress.json"])
     run_cmd([
         "git",
-        "-c", "user.name=Vijay Sirohi",
-        "-c", "user.email=191354616+Vijaysir0hi@users.noreply.github.com",
+        "-c", "user.name=Peak Frame Bot",
+        "-c", "user.email=bot@peakframe.in",
         "commit",
         "-m", "chore(telemetry): auto-update live founder activity metrics [skip ci]"
     ])
