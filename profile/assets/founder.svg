@@ -16,10 +16,10 @@
   <circle cx="1055" cy="39" r="4" fill="#ff5900"/>
   <text x="1068" y="44" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">FOUNDER</text>
 
-  <!-- Metric 1: Anthropic Track -->
-  <text x="40" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">6 / 100</text>
-  <text x="40" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">ANTHROPIC 100-PR TRACK</text>
-  <text x="40" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Batch 1 Shipped · Batch 2 Active (#620)</text>
+  <!-- Metric 1: Core Repositories -->
+  <text x="40" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">8</text>
+  <text x="40" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">OPEN SOURCE PROJECTS</text>
+  <text x="40" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Core Systems · Autonomous Tooling</text>
 
   <!-- Divider 1 -->
   <line x1="320" y1="80" x2="320" y2="175" stroke="#262c33" stroke-width="1"/>
