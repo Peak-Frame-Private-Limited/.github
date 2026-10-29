@@ -42,10 +42,6 @@ Real-time development metrics, continuous contribution heatmap, and activity bre
   <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization.svg" width="100%" alt="Peak Frame Private Limited — Enterprise Fleet & Infrastructure" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/streak.svg" width="100%" alt="Continuous Engineering Streak Telemetry" />
-</p>
-
 
 ## Our toolkit
 

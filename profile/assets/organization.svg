@@ -1,51 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-label="Peak Frame Organization Activity">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Peak Frame Private Limited — Enterprise Fleet &amp; Infrastructure Dashboard">
   <defs>
-    <linearGradient id="orgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#181c20"/>
-      <stop offset="100%" stop-color="#121314"/>
+    <linearGradient id="orgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1217"/>
+      <stop offset="50%" stop-color="#0a0d11"/>
+      <stop offset="100%" stop-color="#080a0d"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="230" rx="14" fill="url(#orgGlow)" stroke="#262c33" stroke-width="1.5"/>
-  
-  <!-- Left Blue/Orange Accent -->
-  <rect x="32" y="28" width="5" height="22" rx="2.5" fill="#58a6ff"/>
-  <text x="50" y="45" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="1">PEAK FRAME PRIVATE LIMITED / ENTERPRISE FLEET &amp; INFRASTRUCTURE</text>
-  
-  <!-- Pill Badge -->
-  <rect x="1010" y="26" width="158" height="26" rx="13" fill="rgba(88, 166, 255, 0.15)" stroke="rgba(88, 166, 255, 0.4)" stroke-width="1"/>
-  <circle cx="1025" cy="39" r="4" fill="#3fb950"/>
-  <text x="1038" y="44" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">ORGANIZATION</text>
 
-  <!-- Metric 1: Public Projects -->
-  <text x="40" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">7</text>
-  <text x="40" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">PUBLIC PROJECTS</text>
-  <text x="40" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Autonomous Tooling &amp; Web Edge</text>
+  <!-- Outer Canvas Container -->
+  <rect x="0" y="0" width="1200" height="560" rx="16" fill="url(#orgBg)" stroke="#262c33" stroke-width="1.5"/>
 
-  <!-- Divider 1 -->
-  <line x1="320" y1="80" x2="320" y2="175" stroke="#262c33" stroke-width="1"/>
+  <!-- Top Accent Bar & Title Header -->
+  <rect x="28" y="28" width="5" height="28" rx="2.5" fill="#ff5900"/>
+  <text x="48" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#f6f2e9" font-weight="700" letter-spacing="0.5">PEAK FRAME PRIVATE LIMITED / FLEET &amp; INFRASTRUCTURE</text>
+  <text x="48" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#a5a8ac" font-weight="400">Autonomous multi-agent orchestration · Zero-trust edge architecture · Microsoft enterprise governance</text>
 
-  <!-- Metric 2: Autonomous Fleet -->
-  <text x="350" y="122" fill="#f8f6f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">4 AGENTS</text>
-  <text x="350" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">AUTONOMOUS FLEET</text>
-  <text x="350" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Orchestrator · Mail · PR Bot · Brand</text>
+  <!-- Top-Right Status Badge -->
+  <rect x="975" y="30" width="197" height="30" rx="15" fill="rgba(63, 185, 80, 0.12)" stroke="rgba(63, 185, 80, 0.35)" stroke-width="1"/>
+  <circle cx="993" cy="45" r="4.5" fill="#3fb950"/>
+  <text x="1006" y="49" fill="#3fb950" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">FLEET ACTIVE · GLOBAL EDGE</text>
 
-  <!-- Divider 2 -->
-  <line x1="620" y1="80" x2="620" y2="175" stroke="#262c33" stroke-width="1"/>
+  <!-- ==================== ROW 1: 4 TOP STAT CARDS (y: 98, h: 96) ==================== -->
 
-  <!-- Metric 3: Security Compliance -->
-  <text x="650" y="122" fill="#3fb950" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">M365 MFA</text>
-  <text x="650" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">ENTERPRISE SECURITY</text>
-  <text x="650" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Microsoft Entra ID · Enforced MFA</text>
+  <!-- Card 1: Autonomous Agents -->
+  <rect x="28" y="98" width="271" height="96" rx="10" fill="#181c20" stroke="#30363c" stroke-width="1"/>
+  <text x="48" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="#f6f2e9" font-weight="700">4</text>
+  <text x="48" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#bc8cff" font-weight="700" letter-spacing="0.5">AUTONOMOUS AGENTS</text>
+  <text x="48" y="179" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Orchestrator · Mail · PR · Brand</text>
 
-  <!-- Divider 3 -->
-  <line x1="910" y1="80" x2="910" y2="175" stroke="#262c33" stroke-width="1"/>
+  <!-- Card 2: Cloudflare Edge -->
+  <rect x="319" y="98" width="271" height="96" rx="10" fill="#181c20" stroke="#30363c" stroke-width="1"/>
+  <text x="339" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="#f6f2e9" font-weight="700">330+</text>
+  <text x="339" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#58a6ff" font-weight="700" letter-spacing="0.5">CLOUDFLARE EDGE CITIES</text>
+  <text x="339" y="179" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Anycast Zero-Trust Ingress</text>
 
-  <!-- Metric 4: Cloud Edge Infrastructure -->
-  <text x="940" y="122" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="800">GLOBAL</text>
-  <text x="940" y="156" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5">CLOUD EDGE</text>
-  <text x="940" y="176" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Cloudflare Zero-Trust · 330+ Cities</text>
+  <!-- Card 3: Microsoft Entra ID Security -->
+  <rect x="610" y="98" width="271" height="96" rx="10" fill="#181c20" stroke="#30363c" stroke-width="1"/>
+  <text x="630" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="#f6f2e9" font-weight="700">M365</text>
+  <text x="630" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#3fb950" font-weight="700" letter-spacing="0.5">MICROSOFT ENTRA ID</text>
+  <text x="630" y="179" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Conditional Access · Enforced MFA</text>
 
-  <!-- Bottom Bar -->
-  <circle cx="40" cy="207" r="4" fill="#3fb950"/>
-  <text x="52" y="211" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Peak Frame Private Limited · Corporate Entity: peakframe.in · HQ: India · Mission Control v1.0</text>
+  <!-- Card 4: Public Projects & Tooling -->
+  <rect x="901" y="98" width="271" height="96" rx="10" fill="#181c20" stroke="#30363c" stroke-width="1"/>
+  <text x="921" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" fill="#f6f2e9" font-weight="700">7</text>
+  <text x="921" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#ff5900" font-weight="700" letter-spacing="0.5">PUBLIC CODEBASES</text>
+  <text x="921" y="179" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Autonomous Tooling &amp; Concepts</text>
+
+  <!-- ==================== ROW 2: DUAL DETAIL PANELS (y: 212, h: 296) ==================== -->
+
+  <!-- LEFT PANEL: Autonomous Fleet Architecture -->
+  <rect x="28" y="212" width="557" height="296" rx="12" fill="#13171b" stroke="#30363c" stroke-width="1"/>
+  <text x="48" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" fill="#f6f2e9" font-weight="700">Autonomous Fleet Architecture</text>
+  <text x="48" y="261" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Decentralized execution graph &amp; event routing</text>
+
+  <!-- Agent 1 Row -->
+  <rect x="48" y="278" width="517" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="58" y="291" width="96" height="20" rx="10" fill="rgba(188, 140, 255, 0.15)"/>
+  <text x="106" y="305" text-anchor="middle" fill="#bc8cff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">ORCHESTRATOR</text>
+  <text x="166" y="299" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Graph Router &amp; Dispatcher</text>
+  <text x="166" y="315" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">DAG execution planning, task scheduling &amp; state sync</text>
+  <circle cx="546" cy="301" r="3.5" fill="#3fb950"/>
+
+  <!-- Agent 2 Row -->
+  <rect x="48" y="332" width="517" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="58" y="345" width="96" height="20" rx="10" fill="rgba(88, 166, 255, 0.15)"/>
+  <text x="106" y="359" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">MAIL AGENT</text>
+  <text x="166" y="353" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Microsoft Graph Engine</text>
+  <text x="166" y="369" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">Transactional communications &amp; OAuth2 token isolation</text>
+  <circle cx="546" cy="355" r="3.5" fill="#3fb950"/>
+
+  <!-- Agent 3 Row -->
+  <rect x="48" y="386" width="517" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="58" y="399" width="96" height="20" rx="10" fill="rgba(63, 185, 80, 0.15)"/>
+  <text x="106" y="413" text-anchor="middle" fill="#3fb950" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">PR BOT</text>
+  <text x="166" y="407" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Automated CI/CD Triage</text>
+  <text x="166" y="423" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">Continuous branch protection, automated review &amp; lint checks</text>
+  <circle cx="546" cy="409" r="3.5" fill="#3fb950"/>
+
+  <!-- Agent 4 Row -->
+  <rect x="48" y="440" width="517" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="58" y="453" width="96" height="20" rx="10" fill="rgba(255, 89, 0, 0.15)"/>
+  <text x="106" y="467" text-anchor="middle" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">BRAND AGENT</text>
+  <text x="166" y="461" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Digital Presence &amp; UI Assets</text>
+  <text x="166" y="477" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">Automated SVG telemetry generators &amp; brand pipelines</text>
+  <circle cx="546" cy="463" r="3.5" fill="#3fb950"/>
+
+  <!-- RIGHT PANEL: Infrastructure & Security Stack -->
+  <rect x="605" y="212" width="567" height="296" rx="12" fill="#13171b" stroke="#30363c" stroke-width="1"/>
+  <text x="625" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" fill="#f6f2e9" font-weight="700">Infrastructure &amp; Security Stack</text>
+  <text x="625" y="261" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Zero-trust enterprise posture &amp; edge data fabric</text>
+
+  <!-- Stack 1 Row -->
+  <rect x="625" y="278" width="527" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="635" y="291" width="100" height="20" rx="10" fill="rgba(88, 166, 255, 0.15)"/>
+  <text x="685" y="305" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">CLOUDFLARE</text>
+  <text x="747" y="299" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Global Anycast &amp; Tunnels</text>
+  <text x="747" y="315" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">330+ Anycast cities, zero exposed ingress ports, DDoS shield</text>
+  <rect x="1080" y="292" width="62" height="18" rx="4" fill="rgba(88, 166, 255, 0.12)"/>
+  <text x="1111" y="305" text-anchor="middle" fill="#58a6ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600">&lt;1ms Edge</text>
+
+  <!-- Stack 2 Row -->
+  <rect x="625" y="332" width="527" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="635" y="345" width="100" height="20" rx="10" fill="rgba(63, 185, 80, 0.15)"/>
+  <text x="685" y="359" text-anchor="middle" fill="#3fb950" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">SECURITY</text>
+  <text x="747" y="353" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Microsoft Entra ID Governance</text>
+  <text x="747" y="369" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">Conditional access MFA, secret isolation &amp; DKIM/DMARC</text>
+  <rect x="1080" y="346" width="62" height="18" rx="4" fill="rgba(63, 185, 80, 0.12)"/>
+  <text x="1111" y="359" text-anchor="middle" fill="#3fb950" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600">Zero Trust</text>
+
+  <!-- Stack 3 Row -->
+  <rect x="625" y="386" width="527" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="635" y="399" width="100" height="20" rx="10" fill="rgba(255, 89, 0, 0.15)"/>
+  <text x="685" y="413" text-anchor="middle" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">DATA FABRIC</text>
+  <text x="747" y="407" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Edge Storage &amp; Runtime</text>
+  <text x="747" y="423" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">Cloudflare D1 SQL, Workers KV, R2 Buckets &amp; Python daemon</text>
+  <rect x="1080" y="400" width="62" height="18" rx="4" fill="rgba(255, 89, 0, 0.12)"/>
+  <text x="1111" y="413" text-anchor="middle" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600">Distributed</text>
+
+  <!-- Stack 4 Row -->
+  <rect x="625" y="440" width="527" height="46" rx="8" fill="#181c20" stroke="#282e34" stroke-width="1"/>
+  <rect x="635" y="453" width="100" height="20" rx="10" fill="rgba(197, 197, 197, 0.15)"/>
+  <text x="685" y="467" text-anchor="middle" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="0.5">CORPORATE</text>
+  <text x="747" y="461" fill="#f6f2e9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600">Peak Frame Private Limited</text>
+  <text x="747" y="477" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5">HQ: India · Founded Oct 2026 · Architect: Vijay Sirohi</text>
+  <rect x="1080" y="454" width="62" height="18" rx="4" fill="rgba(197, 197, 197, 0.12)"/>
+  <text x="1111" y="467" text-anchor="middle" fill="#c5c5c5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600">Registered</text>
+
+  <!-- ==================== FOOTER ==================== -->
+  <line x1="28" y1="524" x2="1172" y2="524" stroke="#262c33" stroke-width="1"/>
+  <circle cx="36" cy="542" r="4" fill="#3fb950"/>
+  <text x="48" y="546" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#8b949e">Peak Frame Private Limited · Corporate Entity: peakframe.in · HQ: India · Mission Control Suite v1.0</text>
+  <text x="1172" y="546" text-anchor="end" fill="#ff5900" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">peakframe.in</text>
 </svg>
