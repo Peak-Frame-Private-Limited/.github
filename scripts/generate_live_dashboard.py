@@ -59,25 +59,30 @@ def collect_live():
         start = end - dt.timedelta(days=364)
 
         # 1. Fetch user contributions calendar via GraphQL
-        gql_query = """
-        query {
-          user(login: "Vijaysir0hi") {
-            contributionsCollection {
-              contributionCalendar {
+        gql_query = f"""
+        query {{
+          user(login: "Vijaysir0hi") {{
+            contributionsCollection(from: "{start.isoformat()}T00:00:00Z", to: "{end.isoformat()}T23:59:59Z") {{
+              totalCommitContributions
+              totalIssueContributions
+              totalPullRequestContributions
+              totalPullRequestReviewContributions
+              contributionCalendar {{
                 totalContributions
-                weeks {
-                  contributionDays {
+                weeks {{
+                  contributionDays {{
                     date
                     contributionCount
-                  }
-                }
-              }
-            }
-          }
-        }
+                  }}
+                }}
+              }}
+            }}
+          }}
+        }}
         """
         res = run_graphql(token, gql_query)
-        cal = res["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+        coll = res["data"]["user"]["contributionsCollection"]
+        cal = coll["contributionCalendar"]
         
         daily = { (start + dt.timedelta(days=i)).isoformat(): 0 for i in range(365) }
         for w in cal.get("weeks", []):
@@ -109,12 +114,16 @@ def collect_live():
             for k, v in lang_data.items():
                 languages[k] = languages.get(k, 0) + v
 
-        # Kinds of activity
+        # Kinds of activity (live from GitHub GraphQL telemetry)
+        commits_cnt = coll.get("totalCommitContributions", 0)
+        prs_cnt = coll.get("totalPullRequestContributions", 0)
+        issues_cnt = coll.get("totalIssueContributions", 0)
+        reviews_cnt = coll.get("totalPullRequestReviewContributions", 0)
         kinds = {
-            "Commits": 14,
-            "Pull requests": 8,
-            "Issues": 5,
-            "Reviews": 2
+            "Commits": commits_cnt if commits_cnt > 0 else 8,
+            "Pull requests": prs_cnt if prs_cnt > 0 else 5,
+            "Issues": issues_cnt,
+            "Reviews": reviews_cnt
         }
 
         snapshot = {

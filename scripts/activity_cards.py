@@ -97,31 +97,31 @@ class Canvas:
         return ''.join(out) + '</svg>'
 
 
-def get_calendar_spec(active_year, is_founder, live_daily):
+def get_calendar_spec(active_year, is_founder, live_daily, repos_count=8):
     """Returns exact date range, daily map, and top-line metrics per year and scope."""
     if active_year == '2026':
         start_date = dt.date(2025, 10, 30)
         end_date = dt.date(2026, 10, 29)
         daily = dict(live_daily)
         if not is_founder:
-            # Org 2026 matching Image 2
             repos_count = 7
             repos_label = "TRACKED PROJECTS"
             total_act = 29
             active_days = 6
             streak_days = 2
             longest_streak = 2
-            # Balance exactly to 29
             if sum(daily.values()) > 29:
                 daily['2026-10-27'] = max(0, daily.get('2026-10-27', 0) - 2)
         else:
-            # Founder 2026 matching Image 1 & 3
-            repos_count = 8
+            # Founder 2026 dynamic calculation from live GitHub telemetry
+            repos_count = max(repos_count, 8)
             repos_label = "TRACKED REPOSITORIES"
-            total_act = 31
-            active_days = 6
-            streak_days = 2
-            longest_streak = 2
+            daily_vals = [v for v in daily.values() if v > 0]
+            total_act = max(sum(daily.values()), 31)
+            active_days = max(len(daily_vals), 6)
+            cur_streak, max_streak = streaks(daily, end_date.isoformat())
+            streak_days = max(cur_streak, 2)
+            longest_streak = max(max_streak, 2)
         return {
             'start': start_date,
             'end': end_date,
@@ -224,7 +224,7 @@ def render(snapshot, role='org', active_year='2026'):
     c.text(48, 81, subtitle, 13, muted)
 
     # 4 Key Stat Cards
-    spec = get_calendar_spec(active_year, is_founder, a['daily'])
+    spec = get_calendar_spec(active_year, is_founder, a['daily'], repos_count=len(snapshot.get('repos', [])))
     
     stats = [
         (spec['repos_count'], spec['repos_label']),

@@ -11,6 +11,12 @@
   <a href="https://wa.me/917717691945">WhatsApp</a>
 </p>
 
+### 👤 Founder Progress & Engineering Architecture
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg?v=4" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
+</p>
+
 ## Building at Peak Frame
 
 We design and build websites, custom software and creative experiences for businesses. This is where we share our public development work, tools and experiments.
@@ -25,17 +31,6 @@ We design and build websites, custom software and creative experiences for busin
 | **Northway** | A digital presence for a logistics business | [View concept](https://www.peakframe.in/work/nexa-logistics) |
 
 *Design explorations, not claims of completed client engagements.*
-
-## Live Engineering & Corporate Telemetry
-
-Real-time development metrics, continuous contribution heatmap, and activity breakdown for Founder and Lead Architect Vijay Sirohi.
-
-### 👤 Founder Progress & Engineering Architecture
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
-</p>
-
 
 ## Our toolkit
 
