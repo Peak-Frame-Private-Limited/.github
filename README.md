@@ -28,18 +28,12 @@ We design and build websites, custom software and creative experiences for busin
 
 ## Live Engineering & Corporate Telemetry
 
-Real-time development metrics, continuous contribution heatmap, and activity breakdown across the Peak Frame Organization and Founder.
+Real-time development metrics, continuous contribution heatmap, and activity breakdown for Founder and Lead Architect Vijay Sirohi.
 
 ### 👤 Founder Progress & Engineering Architecture
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/founder-activity.svg" width="100%" alt="Vijay Sirohi — Founder Progress & Engineering Architecture" />
-</p>
-
-### 🏢 Peak Frame Organization & Fleet Infrastructure
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Peak-Frame-Private-Limited/.github/main/profile/assets/organization.svg?v=2" width="100%" alt="Peak Frame Private Limited — Enterprise Fleet & Infrastructure" />
 </p>
 
 
