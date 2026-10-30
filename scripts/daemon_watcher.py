@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Peak Frame Real-Time Telemetry Background Watcher Daemon.
-Polls GitHub GraphQL API every 30 seconds for live contribution updates in IST.
-When new activity occurs anywhere (local or remote), immediately updates dashboards and pushes to GitHub.
+Peak Frame Ultra-Fast Telemetry Background Watcher Daemon.
+Polls GitHub GraphQL API every 5 seconds for live contribution updates in Indian Standard Time (IST).
+Includes automatic rate-limit protection and instant auto-sync.
 """
 
 import datetime as dt
@@ -30,7 +30,7 @@ def get_token():
     return token
 
 
-def fetch_live_count(token):
+def fetch_live_data(token):
     import urllib.request
     IST = dt.timezone(dt.timedelta(hours=5, minutes=30), name="IST")
     current_year = dt.datetime.now(IST).year
@@ -43,6 +43,10 @@ def fetch_live_count(token):
           }}
         }}
       }}
+      rateLimit {{
+        remaining
+        resetAt
+      }}
     }}
     """
     req = urllib.request.Request(
@@ -50,13 +54,16 @@ def fetch_live_count(token):
         data=json.dumps({"query": query}).encode("utf-8"),
         headers={"Authorization": f"Bearer {token}", "User-Agent": "PeakFrame"}
     )
-    with urllib.request.urlopen(req, timeout=10) as resp:
+    with urllib.request.urlopen(req, timeout=8) as resp:
         data = json.load(resp)
-        return data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+        coll = data["data"]["user"]["contributionsCollection"]
+        count = coll["contributionCalendar"]["totalContributions"]
+        remaining = data.get("data", {}).get("rateLimit", {}).get("remaining", 5000)
+        return count, remaining
 
 
-def run_daemon(interval=30):
-    print(f"[{dt.datetime.now().isoformat()}] Starting Peak Frame Telemetry Watcher Daemon (poll interval: {interval}s)...")
+def run_daemon(target_interval=5):
+    print(f"[{dt.datetime.now().isoformat()}] Starting Peak Frame Real-Time Telemetry Daemon (poll interval: {target_interval}s)...")
     token = get_token()
     last_known_count = None
     
@@ -68,19 +75,29 @@ def run_daemon(interval=30):
         except Exception:
             last_known_count = None
 
+    sleep_time = target_interval
     while True:
         try:
-            current_count = fetch_live_count(token)
+            current_count, remaining = fetch_live_data(token)
+            
+            # Rate limit guard: 5s consumes 720/hr out of 5,000/hr limit.
+            # If remaining ever dips below 200, step down to 15s to be 100% safe.
+            if remaining < 200:
+                sleep_time = 15
+            else:
+                sleep_time = target_interval
+
             if last_known_count is None or current_count != last_known_count:
-                print(f"[{dt.datetime.now().isoformat()}] Detected contribution change: {last_known_count} -> {current_count}. Triggering sync...")
+                print(f"[{dt.datetime.now().isoformat()}] Live contribution change detected: {last_known_count} -> {current_count}. Triggering instant sync (API points left: {remaining})...")
                 sync_telemetry.sync()
                 last_known_count = current_count
         except Exception as e:
-            # Silently retry on transient network glitch
+            # Silently pass transient network blips and retry next tick
             pass
-        time.sleep(interval)
+        
+        time.sleep(sleep_time)
 
 
 if __name__ == "__main__":
-    interval = int(sys.argv[1]) if len(sys.argv) > 1 else 30
+    interval = int(sys.argv[1]) if len(sys.argv) > 1 else 5
     run_daemon(interval)
