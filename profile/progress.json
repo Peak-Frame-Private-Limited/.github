@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T06:24:07+05:30",
+  "updated": "2026-10-30T06:34:46+05:30",
   "org": "Peak-Frame-Private-Limited",
   "repos": [
     {
@@ -21,6 +21,16 @@
       "open_prs": 1,
       "stars": 0,
       "pushed_at": "2026-10-29T13:11:15Z"
+    },
+    {
+      "name": "career-ops",
+      "url": "https://github.com/Vijaysir0hi/career-ops",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-30T00:59:33Z"
     },
     {
       "name": "clipforge",
@@ -90,7 +100,7 @@
       "open_issues": 0,
       "open_prs": 1,
       "stars": 0,
-      "pushed_at": "2026-10-29T13:05:06Z"
+      "pushed_at": "2026-10-30T00:57:11Z"
     },
     {
       "name": "Vijaysir0hi",
@@ -411,7 +421,7 @@
       "2026-10-27": 0,
       "2026-10-28": 3,
       "2026-10-29": 23,
-      "2026-10-30": 36,
+      "2026-10-30": 37,
       "2026-10-31": 0,
       "2026-11-01": 0,
       "2026-11-02": 0,
@@ -483,15 +493,19 @@
     },
     "languages": {
       "Python": 3824243,
-      "JavaScript": 688350,
-      "Dockerfile": 1319,
-      "Shell": 995803,
-      "HTML": 207262,
-      "CSS": 97288,
+      "JavaScript": 20963265,
+      "Dockerfile": 5186,
+      "Shell": 1105592,
+      "TypeScript": 10769906,
+      "Go": 624598,
+      "HTML": 361303,
+      "CSS": 110525,
+      "TeX": 9874,
+      "Nix": 3907,
+      "PowerShell": 2264,
       "Makefile": 13216,
       "Procfile": 19,
       "Batchfile": 665,
-      "TypeScript": 9497245,
       "PLpgSQL": 26635
     }
   }
