@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T07:19:43+05:30",
+  "updated": "2026-10-30T07:30:59+05:30",
   "org": "Peak-Frame-Private-Limited",
   "repos": [
     {
@@ -53,6 +53,16 @@
       "pushed_at": "2026-10-29T13:19:51Z"
     },
     {
+      "name": "emberterm",
+      "url": "https://github.com/Vijaysir0hi/emberterm",
+      "commits": 3,
+      "merged": 1,
+      "open_issues": 0,
+      "open_prs": 1,
+      "stars": 0,
+      "pushed_at": "2026-10-29T02:22:02Z"
+    },
+    {
       "name": "imgproxykit",
       "url": "https://github.com/Vijaysir0hi/imgproxykit",
       "commits": 3,
@@ -100,7 +110,7 @@
       "open_issues": 0,
       "open_prs": 1,
       "stars": 0,
-      "pushed_at": "2026-10-30T01:44:03Z"
+      "pushed_at": "2026-10-30T01:59:37Z"
     },
     {
       "name": "ThrottleIQ",
@@ -441,7 +451,7 @@
       "2026-10-27": 0,
       "2026-10-28": 3,
       "2026-10-29": 23,
-      "2026-10-30": 47,
+      "2026-10-30": 48,
       "2026-10-31": 0,
       "2026-11-01": 0,
       "2026-11-02": 0,
@@ -513,16 +523,18 @@
     },
     "languages": {
       "Python": 11725653,
-      "JavaScript": 21692583,
+      "JavaScript": 21704451,
       "Dockerfile": 7734,
-      "Shell": 1138737,
-      "TypeScript": 10858065,
+      "Shell": 1140134,
+      "TypeScript": 10960791,
       "Go": 624729,
-      "HTML": 1082209,
-      "CSS": 149886,
+      "HTML": 1082974,
+      "CSS": 150579,
       "TeX": 9874,
       "Nix": 3907,
       "PowerShell": 2264,
+      "Svelte": 153498,
+      "Rust": 103134,
       "Makefile": 25434,
       "Procfile": 19,
       "Batchfile": 16609,
@@ -530,7 +542,6 @@
       "C++": 6960,
       "C": 1694,
       "Jinja": 1068,
-      "Rust": 660,
       "C#": 128,
       "Mermaid": 50,
       "Dart": 5774977,
