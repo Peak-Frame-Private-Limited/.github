@@ -62,8 +62,8 @@ class Canvas:
     def polygon(self, points, fill, stroke):
         self.commands.append(('polygon', (points, fill, stroke)))
 
-    def circle(self, x, y, r, fill):
-        self.commands.append(('circle', (x, y, r, fill)))
+    def circle(self, x, y, r, fill, stroke=None, stroke_width=2):
+        self.commands.append(('circle', (x, y, r, fill, stroke, stroke_width)))
 
     def link_start(self, href):
         self.commands.append(('link_start', (href,)))
@@ -87,8 +87,11 @@ class Canvas:
                 pts, f, s = args
                 out.append(f'<polygon points="{" ".join(f"{x},{y}" for x,y in pts)}" fill="{f}" stroke="{s}" stroke-width="2"/>')
             elif kind == 'circle':
-                x, y, r, f = args
-                out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{f}"/>')
+                x, y, r, f = args[:4]
+                s = args[4] if len(args) > 4 else None
+                sw = args[5] if len(args) > 5 else 2
+                stroke_attr = f' stroke="{s}" stroke-width="{sw}"' if s else ''
+                out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{f}"{stroke_attr}/>')
             elif kind == 'link_start':
                 href = args[0]
                 out.append(f'<a href="{html.escape(href)}" target="_blank">')
@@ -305,13 +308,13 @@ def render(snapshot, role='org', active_year='2026'):
     c.line([(cx, cy - radius), (cx, cy + radius)], '#596068')
 
     if is_founder:
-        # Founder profile distribution matching user Image 3: 72% Commits, 28% Pull requests
-        kinds_data = {'Code review': 0, 'Issues': 0, 'Pull requests': 28, 'Commits': 72}
+        # Founder profile distribution matching user live GitHub Activity Breakdown: 59% Commits, 41% Pull requests
+        kinds_data = {'Code review': 0, 'Issues': 0, 'Pull requests': 41, 'Commits': 59}
         axes = [('Code review', 0, -1), ('Issues', 1, 0), ('Pull requests', 0, 1), ('Commits', -1, 0)]
         radar_color = '#2ea043'
         radar_fill = 'rgba(46, 160, 67, 0.35)'
     else:
-        # Org distribution matching user Image 2: Commits 48%, PRs 28%, Issues 17%, Reviews 7%
+        # Org distribution: Commits 48%, PRs 28%, Issues 17%, Reviews 7%
         kinds_data = {'Reviews': 7, 'Issues': 17, 'Pull requests': 28, 'Commits': 48}
         axes = [('Reviews', 0, -1), ('Issues', 1, 0), ('Pull requests', 0, 1), ('Commits', -1, 0)]
         radar_color = orange
@@ -324,12 +327,18 @@ def render(snapshot, role='org', active_year='2026'):
         points.append((cx + dx * extent, cy + dy * extent))
         x, y = cx + dx * (radius + 17), cy + dy * (radius + 19)
         anchor = 'start' if dx == 1 else 'end' if dx == -1 else 'middle'
-        text = f'{label} · {round(pct)}%' if pct > 0 else f'{label}'
+        if is_founder:
+            text = f'{pct}% {label}' if pct > 0 else f'{label}'
+        else:
+            text = f'{label} · {round(pct)}%' if pct > 0 else f'{label}'
         c.text(x, y + 4, text, 12, muted, anchor=anchor)
 
     c.polygon(points, radar_fill, radar_color)
     for x, y in points:
-        c.circle(x, y, 4, radar_color)
+        if is_founder and (x, y) != (cx, cy):
+            c.circle(x, y, 4, '#ffffff', stroke=radar_color, stroke_width=2)
+        else:
+            c.circle(x, y, 3, radar_color)
 
     # Bottom Row — Right Card: Languages in public projects
     c.rect(605, 519, 567, 281, '#13171b', 12, '#30363c')

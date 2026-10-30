@@ -181,6 +181,18 @@ def main():
             (assets_dir / f"founder-activity-{yr}.svg").write_text(fnd_svg, encoding="utf-8")
 
     (ROOT / "profile" / "progress.json").write_text(json.dumps(snapshot, indent=2), encoding="utf-8")
+
+    # Mirror to personal repo assets and peakframe-github-profile to keep everything in sync
+    mirror_dirs = [
+        ROOT.parent / "Vijaysir0hi" / "assets",
+        ROOT.parent / "peakframe-github-profile" / "profile" / "assets"
+    ]
+    for m_dir in mirror_dirs:
+        if m_dir.exists():
+            for f in assets_dir.glob("*.svg"):
+                (m_dir / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8")
+            print(f"Mirrored telemetry SVGs to {m_dir}")
+
     print("Generated live organization and founder dashboards across all years successfully!")
 
 
